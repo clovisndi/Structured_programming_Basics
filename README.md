@@ -16,86 +16,90 @@ This code is used to print the times table for a given number. Here's an explana
 # Structured_programming_Basics\two_swap
 This is a C program to swap two numbers without using a third variable. Here's an explanation of this code:
 
- The program includes the standard input/output header file `stdio.h`.
+1. The program includes the standard input/output header file `stdio.h`.
 
- Two functions `add()` and `sub()` are defined which can perform addition and subtraction operations independently.
+2. Two functions `add()` and `sub()` are defined which can perform addition and subtraction operations independently.
 
- In `add()` function, two integer values `a` and `b` are passed as parameters and the sum of these two numbers is returned.
+3. In `add()` function, two integer values `a` and `b` are passed as parameters and the sum of these two numbers is returned.
 
- In `sub()` function, two integer values `a` and `b` are passed as parameters and the difference between these two numbers is returned.
+4. In `sub()` function, two integer values `a` and `b` are passed as parameters and the difference between these two numbers is returned.
 
- The `main()` function is defined with no parameters.
+5. The `main()` function is defined with no parameters.
 
- Two integer variables `a` and `b` are declared to store the user entered values.
+6. Two integer variables `a` and `b` are declared to store the user entered values.
 
- The user is prompted to enter the first number using `printf()` function.
+7. The user is prompted to enter the first number using `printf()` function.
 
- The value entered by the user is read using the `scanf()` function and stored in the `a` variable.
+8. The value entered by the user is read using the `scanf()` function and stored in the `a` variable.
 
- The user is prompted to enter the second number using `printf()` function.
+9. The user is prompted to enter the second number using `printf()` function.
 
- The value entered by the user is read using the `scanf()` function and stored in the `b` variable.
+10. The value entered by the user is read using the `scanf()` function and stored in the `b` variable.
 
- The values of the entered numbers are printed on the console before the numbers are swapped using `printf()` function.
+11. The values of the entered numbers are printed on the console before the numbers are swapped using `printf()` function.
 
- `a` variable is assigned the sum of `a` and `b` using the `add()` function.
+12. `a` variable is assigned the sum of `a` and `b` using the `add()` function.
 
- `b` variable is assigned the difference between `a` and `b` using the `sub()` function.
+13. `b` variable is assigned the difference between `a` and `b` using the `sub()` function.
 
- `a` variable is assigned the difference between `a` and `b` using the `sub()` function.
+14. `a` variable is assigned the difference between `a` and `b` using the `sub()` function.
 
- The final values of the swapped numbers are printed on the console using `printf()` function.
+15. The final values of the swapped numbers are printed on the console using `printf()` function.
 
- The `return` statement is used to return 0 to the operating system to indicate successful execution of the program.
+16. The `return` statement is used to return 0 to the operating system to indicate successful execution of the program.
 
 So, when you run the program, you will be prompted to enter two numbers. After entering the numbers, the program will swap the values of these two numbers without using a third variable and print the final values of the swapped numbers on the console.
+
 
 
 # Structured_programming_Basics\sum.c
 This is a C program to compute the sum of digits of a three-digit number entered by the user. Here's an explanation of this code:
 
- The program includes the standard input/output header file `stdio.h`.
+1. The program includes the standard input/output header file `stdio.h`.
 
- The `main()` function is defined with no parameters.
+2. The `main()` function is defined with no parameters.
 
- `num`, `sum`, and `rem` are declared as integers to store the user entered three-digit number, the sum of its digits and the remainder of the division by 10 respectively.
+3. `num`, `sum`, and `rem` are declared as integers to store the user entered three-digit number, the sum of its digits and the remainder of the division by 10 respectively.
 
- The user is prompted to enter a three-digit number using `printf()` function.
+4. The user is prompted to enter a three-digit number using `printf()` function.
 
- The value entered by the user is read using the `scanf()` function and stored in the `num` variable.
+5. The value entered by the user is read using the `scanf()` function and stored in the `num` variable.
 
- The first digit of the entered number is calculated by taking the remainder of the number divided by 10 and it is stored in the `rem` variable. Then it is added to the `sum` variable to accumulate the sum of digits.
+6. The first digit of the entered number is calculated by taking the remainder of the number divided by 10 and it is stored in the `rem` variable. Then it is added to the `sum` variable to accumulate the sum of digits.
 
- The first digit is removed from the number by dividing the number by 10 and the quotient is stored in the `num` variable.
+7. The first digit is removed from the number by dividing the number by 10 and the quotient is stored in the `num` variable.
 
- Steps 6-7 are repeated two more times to calculate the remaining digits of the entered number and their sum.
+8. Steps 6-7 are repeated two more times to calculate the remaining digits of the entered number and their sum.
 
- The `printf()` function is used to print the final value of the `sum` variable calculated in the above steps.
+9. The `printf()` function is used to print the final value of the `sum` variable calculated in the above steps.
 
- The `return` statement is used to return 0 to the operating system to indicate successful execution of the program.
+10. The `return` statement is used to return 0 to the operating system to indicate successful execution of the program.
 
 So, when you run the program, you will be prompted to enter a three-digit number and after entering the number, the program will calculate the sum of its digits and print the result on the console.
+
+
 
 # Structure_programing_Basics\star.c
 This C program prints a star pattern in the form of a pyramid. It defines the number of rows for the pyramid (`rows`) and uses two nested for loops to print the stars and spaces for each row. Here's an explanation of each part of the program:
 
- The program includes the standard input/output header file `stdio.h`.
+1. The program includes the standard input/output header file `stdio.h`.
 
- The `main` function is defined with no parameters.
+2. The `main` function is defined with no parameters.
 
- The program initializes the number of rows (`rows`) to 4.
+3. The program initializes the number of rows (`rows`) to 4.
 
- The program calculates the initial number of spaces (`space`) and initial number of stars (`star`) for the first row of the pyramid.
+4. The program calculates the initial number of spaces (`space`) and initial number of stars (`star`) for the first row of the pyramid.
 
- The program uses two nested for loops to print the upper half of the pyramid. The outer loop (`i`) iterates from 1 to `(rows * 2 - 1)` (which is the total number of rows in the upper half of the pyramid). The inner loop (`j`) prints the spaces and stars for each row. The first inner loop (`j`) prints the spaces (which start at `space` and decrease by 1 for each row). The second inner loop (`j`) prints the stars (which start at `star` and increase by 2 for each row).
+5. The program uses two nested for loops to print the upper half of the pyramid. The outer loop (`i`) iterates from 1 to `(rows * 2 - 1)` (which is the total number of rows in the upper half of the pyramid). The inner loop (`j`) prints the spaces and stars for each row. The first inner loop (`j`) prints the spaces (which start at `space` and decrease by 1 for each row). The second inner loop (`j`) prints the stars (which start at `star` and increase by 2 for each row).
 
- The program uses an `if` statement to determine when it has reached the middle row of the pyramid. Once this middle row is reached, the program reverses the order of the outer loop (`i`), and adjusts the number of spaces and stars accordingly.
+6. The program uses an `if` statement to determine when it has reached the middle row of the pyramid. Once this middle row is reached, the program reverses the order of the outer loop (`i`), and adjusts the number of spaces and stars accordingly.
 
- The program returns 0 to indicate successful execution.
+7. The program returns 0 to indicate successful execution.
 
- The pattern is printed on the console with spaces and asterisks.
+8. The pattern is printed on the console with spaces and asterisks.
 
 So, When you run this program, it will print the star pattern in the form of a pyramid.
+
 
 # Structure_programing_Basics\pyramid.c
 This code prints a Pyramid pattern in C where the user can specify the number of rows in the pyramid. The pattern is printed with spaces to create an indentation. Here's a detailed explanation of the code:
