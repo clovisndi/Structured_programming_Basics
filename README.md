@@ -138,3 +138,68 @@ This is a C program that reverses the digits of a three-digit number entered by 
 4. The program then uses `printf` to output the digits in reverse order by printing `n`, followed by `b`, followed by `a`.
 
 5. The `main` function returns 0 to indicate successful execution.
+
+# Structure_programming_Basics\Character.c
+This is a C program that takes a single character input from the user and determines if it is a capital letter, a small case letter, a digit, or a special symbol. Here's a brief explanation of how it works:
+
+1. The program declares a character variable `c`.
+
+2. The user is prompted to enter a character. The character is read into `c` using the `scanf` function.
+
+3. The program then uses a series of `if-else` statements to check whether the character is a capital letter, a small case letter, a digit, or a special symbol. If the character falls into any of these categories, a corresponding message is printed using `printf`.
+
+4. The `main` function returns 0 to indicate successful execution.
+
+# Structure_programming_Basics\power.c
+Here, the `pow_recursion` function is defined recursively, where if the exponent `y` is negative, the function returns -1, if it is 0, the function returns 1, and if it is greater than 0, the function multiplies the base `x` to the result of `x` raised to the exponent `y-1`.
+
+In `main()`, the user inputs the base `x` and the exponent `y`, which are then used to call the `pow_recursion` function and output the result using `printf`.
+
+# Structure_programming_Basics\binary_search.c
+The code implements a binary search algorithm to find the index of a given element in a given array. 
+
+The most important part of the code is the `binarySearch` function. This function takes the input array, left and right indices of the search range, as well as the element to search for, as arguments, and returns the index of the element if found, or -1 if not found.
+
+The function starts by checking if the right index is greater than or equal to the left index. If this is not the case, then the search range has been exhausted, and it can be concluded that the element is not present in the array.
+
+If the search range is not exhausted, the function calculates the mid index of the range. If the element at the mid index is equal to the element being searched for, then the mid index is returned.
+
+If the element at the mid index is greater than the element being searched for, then the search continues in the left half of the range by recursively calling the `binarySearch` function with the updated left and right indices.
+
+If the element at the mid index is less than the element being searched for, then the search continues in the right half of the range by recursively calling the `binarySearch` function with the updated left and right indices.
+
+Overall, the `binarySearch` function uses a divide-and-conquer strategy to efficiently search an array for a given element, reducing the search range by half at each recursion. The function returns the index of the element if it is found, or -1 if it is not found.
+
+# Structure_programming_basics\Probem 1.c
+This program calculates and prints the remaining balance at the end of 12 months of a credit card balance, given the initial balance, annual interest rate, and minimum monthly payment rate provided by the user.
+
+The important lines of the code include:
+
+1. Lines 7-13 prompt the user to input the initial balance, annual interest rate, and minimum monthly payment rate.
+
+2. Line 15 calculates the monthly interest rate by dividing the annual interest rate by 12.
+
+3. Line 16 initializes the total amount paid to the credit card company to zero.
+
+4. Lines 18-25 loop through the 12 months and calculate the monthly minimum payment, unpaid balance, new balance after interest, and total amount paid for each month. It then prints out the same information.
+
+5. Line 27 prints the total amount paid at the end of 12 months.
+
+6. Line 28 prints the remaining balance at the end of 12 months.
+
+Overall, the code uses a for loop to iterate over the 12 months, with a set of calculations for each month that update the credit card balance and total amount paid. It then prints the monthly information to the console. Finally, it prints the total amount paid and the remaining balance at the end of 12 months.
+
+# Structure_programming_basics\Probem 2.c
+This program calculates the lowest monthly payment needed to pay off a credit card balance within 12 months, given the balance and annual interest rate provided by the user.
+
+The important lines of code include:
+
+1. Lines 3-12 define the `calculate_minimum_payment` function that takes the annual interest rate and previous balance as parameters and returns the lowest monthly payment needed to pay off the balance within 12 months. The function first sets up a binary search algorithm with the minimum monthly payment initially set to the average of the lower and upper bounds. Inside the while loop, the function calculates the remaining balance after 12 months of paying the minimum monthly payment. If the remaining balance is less than or equal to zero, the function breaks out of the while loop. Otherwise, it updates the lower or upper bound for the minimum payment depending on the value of the minimum payment as compared to the current balance. Finally, it updates the minimum payment as the average of the new lower and upper bounds and loops again until it finds the lowest monthly payment needed.
+
+2. Lines 14-22 prompt the user to input the credit card balance and annual interest rate.
+
+3. Line 24 calls the `calculate_minimum_payment` function with the annual interest rate and balance as arguments.
+
+4. Line 26 prints the calculated lowest monthly payment needed to pay off the balance within 12 months.
+
+Overall, the code uses a binary search algorithm to efficiently find the lowest monthly payment needed to pay off a credit card balance within 12 months. It first prompts the user for input values, then calls the `calculate_minimum_payment` function to perform the calculation, and finally prints out the result to the console.
