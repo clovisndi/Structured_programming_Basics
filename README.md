@@ -125,3 +125,16 @@ This code prints a Pyramid pattern in C where the user can specify the number of
 10. At last, the `return` statement is used to return 0 to the operating system to indicate successful execution of the program.
 
 So, when you run the program, you will see a Pyramid pattern printed on the console with the specified number of rows with spaces in each row to create an indentation.
+
+# Structure_programing_Basics\reverse.c
+This is a C program that reverses the digits of a three-digit number entered by the user. Here's a brief explanation of how it works:
+
+1. The program first declares three integer variables: `a`, `b`, and `n`.
+
+2. The user is prompted to enter a three-digit number. The number is read into `n` using the `scanf` function.
+
+3. The program then uses division and modulo operators to separate `n` into its three digits: `a`, which contains the first digit, `b`, which contains the second digit, and `n`, which contains the third digit.
+
+4. The program then uses `printf` to output the digits in reverse order by printing `n`, followed by `b`, followed by `a`.
+
+5. The `main` function returns 0 to indicate successful execution.
